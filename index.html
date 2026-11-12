@@ -7,110 +7,140 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Cabeçalho e Menu -->
-  <header>
-    <h1>Concessionária Saiu-Bate</h1>
-    <p>Seminovos e usados prontos para rodar.</p>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#veiculos">Veículos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+ 
+  <!-- 1. Cabeçalho e Menu -->
+  <header class="cabecalho">
+    <h1 class="cabecalho-titulo">Concessionária Saiu-Bate</h1>
+    <p class="cabecalho-subtitulo">Seminovos e usados prontos para rodar.</p>
+    <nav class="menu-navegacao">
+      <a href="#inicio" class="menu-link">Início</a>
+      <a href="#veiculos" class="menu-link">Veículos</a>
+      <a href="#contato" class="menu-link">Contato</a>
     </nav>
   </header>
-
-  <hr>
-
+ 
+  <hr class="divisor">
+ 
   <!-- Conteúdo Principal -->
-  <main>
-
-    <!-- Seção de Apresentação -->
-    <section id="inicio">
-      <h2>Bem-vindo à Saiu-Bate</h2>
-      <p>Encontre o carro ideal com condições facilitadas e entrega imediata.</p>
+  <main class="conteudo-principal">
+ 
+    <!-- 2. Seção de Apresentação (Banner) -->
+    <section id="inicio" class="secao-banner">
+      <h2 class="banner-titulo">Bem-vindo à Saiu-Bate</h2>
+      <p class="banner-texto">Encontre o carro ideal com condições facilitadas e entrega imediata.</p>
     </section>
-
-    <hr>
-
-    <!-- Catálogo de Veículos -->
-    <section id="veiculos">
-      <h2>Veículos em Destaque</h2>
-
-      <article>
-        <h3>Fiat Uno Mille 1.0</h3>
-        <p>Ano: 2012 | Câmbio: Manual</p>
-        <p><strong>Preço: R$ 22.900,00</strong></p>
-        <a href="#contato">Tenho interesse</a>
-         <img src="img/Fiat Uno Mille 1.0.jpg" alt="." height="200">
-      </article>
-
-      <article>
-        <h3>Volkswagen Gol 1.6</h3>
-        <p>Ano: 2018 | Câmbio: Manual</p>
-        <p><strong>Preço: R$ 44.500,00</strong></p>
-        <a href="#contato">Tenho interesse</a>
-        <img src="img/Volkswagen Gol 1.6.jpg" alt="." height="200">
-      </article>
-
-      <article>
-        <h3>Chevrolet Onix LT 1.0</h3>
-        <p>Ano: 2021 | Câmbio: Automático</p>
-        <p><strong>Preço: R$ 63.000,00</strong></p>
-        <a href="#contato">Tenho interesse</a>
-          <img src="img/Chevrolet Onix LT 1.0.jpg" alt="." height="200">
-      </article>
+ 
+    <hr class="divisor">
+ 
+    <!-- 3. Catálogo de Veículos -->
+    <section id="veiculos" class="secao-veiculos">
+      <h2 class="secao-titulo">Veículos em Destaque</h2>
+ 
+      <div class="catalogo-grid">
+ 
+        <article class="card-veiculo">
+          <h3 class="veiculo-nome">Fiat Uno Mille 1.0</h3>
+          <p class="veiculo-info">Ano: 2012 | Câmbio: Manual</p>
+          <p class="veiculo-preco"><strong>Preço: R$ 22.900,00</strong></p>
+          <a href="#contato" class="btn-interesse">Tenho interesse</a>
+          <img src="img/Fiat Uno Mille 1.0.jpg" alt="Fiat Uno Mille 1.0" height="200" class="veiculo-imagem">
+        </article>
+ 
+        <article class="card-veiculo">
+          <h3 class="veiculo-nome">Volkswagen Gol 1.6</h3>
+          <p class="veiculo-info">Ano: 2018 | Câmbio: Manual</p>
+          <p class="veiculo-preco"><strong>Preço: R$ 44.500,00</strong></p>
+          <a href="#contato" class="btn-interesse">Tenho interesse</a>
+          <img src="img/Volkswagen Gol 1.6.jpg" alt="Volkswagen Gol 1.6" height="200" class="veiculo-imagem">
+        </article>
+ 
+        <article class="card-veiculo">
+          <h3 class="veiculo-nome">Chevrolet Onix LT 1.0</h3>
+          <p class="veiculo-info">Ano: 2021 | Câmbio: Automático</p>
+          <p class="veiculo-preco"><strong>Preço: R$ 63.000,00</strong></p>
+          <a href="#contato" class="btn-interesse">Tenho interesse</a>
+          <img src="img/Chevrolet Onix LT 1.0.jpg" alt="Chevrolet Onix LT 1.0" height="200" class="veiculo-imagem">
+        </article>
+ 
+        <article class="card-veiculo">
+          <h3 class="veiculo-nome">Ford Ka 1.0</h3>
+          <p class="veiculo-info">Ano: 2017 | Câmbio: Manual</p>
+          <p class="veiculo-preco"><strong>Preço: R$ 35.900,00</strong></p>
+          <a href="#contato" class="btn-interesse">Tenho interesse</a>
+          <img src="img/Ford Ka 1.0.jpg" alt="Ford Ka 1.0" height="200" class="veiculo-imagem">
+        </article>
+ 
+        <article class="card-veiculo">
+          <h3 class="veiculo-nome">Hyundai HB20 1.0</h3>
+          <p class="veiculo-info">Ano: 2019 | Câmbio: Manual</p>
+          <p class="veiculo-preco"><strong>Preço: R$ 52.900,00</strong></p>
+          <a href="#contato" class="btn-interesse">Tenho interesse</a>
+          <img src="img/Hyundai HB20 1.0.jpg" alt="Hyundai HB20 1.0" height="200" class="veiculo-imagem">
+        </article>
+ 
+        <article class="card-veiculo">
+          <h3 class="veiculo-nome">Toyota Corolla XEi 2.0</h3>
+          <p class="veiculo-info">Ano: 2020 | Câmbio: Automático</p>
+          <p class="veiculo-preco"><strong>Preço: R$ 98.900,00</strong></p>
+          <a href="#contato" class="btn-interesse">Tenho interesse</a>
+          <img src="img/Toyota Corolla XEi 2.0.jpg" alt="Toyota Corolla XEi 2.0" height="200" class="veiculo-imagem">
+        </article>
+ 
+      </div>
     </section>
-
-    <hr>
-
-    <!-- Formulário de Contato -->
-    <section id="contato">
-      <h2>Fale Conosco</h2>
-      <form action="#" method="post">
-        <div>
-          <label for="nome">Nome:</label><br>
-          <input type="text" id="nome" name="nome" required>
+ 
+    <hr class="divisor">
+ 
+    <!-- 4. Formulário de Contato -->
+    <section id="contato" class="secao-contato">
+      <h2 class="secao-titulo">Fale Conosco</h2>
+      <form action="#" method="post" class="formulario-contato">
+ 
+        <div class="campo-grupo">
+          <label for="nome" class="campo-label">Nome:</label><br>
+          <input type="text" id="nome" name="nome" class="campo-input" required>
         </div>
         <br>
-        <div>
-          <label for="telefone">Telefone / WhatsApp:</label><br>
-          <input type="tel" id="telefone" name="telefone" required>
+ 
+        <div class="campo-grupo">
+          <label for="telefone" class="campo-label">Telefone / WhatsApp:</label><br>
+          <input type="tel" id="telefone" name="telefone" class="campo-input" required>
         </div>
         <br>
-        <div>
-          <label for="veiculo">Veículo de interesse:</label><br>
-          <select id="veiculo" name="veiculo">
+ 
+        <div class="campo-grupo">
+          <label for="veiculo" class="campo-label">Veículo de interesse:</label><br>
+          <select id="veiculo" name="veiculo" class="campo-select">
             <option value="uno">Fiat Uno Mille 1.0</option>
-            <img src="img/Fiat Uno Mille 1.0.jpg" alt=".">
-            
             <option value="gol">Volkswagen Gol 1.6</option>
-            <img src="img/Volkswagen Gol 1.6.jpg" alt=".">
-
             <option value="onix">Chevrolet Onix LT 1.0</option>
-            <img src="img/Chevrolet Onix LT 1.0.jpg" alt=".">
+            <option value="ka">Ford Ka 1.0</option>
+            <option value="hb20">Hyundai HB20 1.0</option>
+            <option value="corolla">Toyota Corolla XEi 2.0</option>
           </select>
         </div>
         <br>
-        <div>
-          <label for="mensagem">Mensagem:</label><br>
-          <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+ 
+        <div class="campo-grupo">
+          <label for="mensagem" class="campo-label">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="4" class="campo-textarea"></textarea>
         </div>
         <br>
-        <button type="submit">Enviar Proposta</button>
+ 
+        <button type="submit" class="btn-enviar">Enviar Proposta</button>
       </form>
     </section>
-
+ 
   </main>
-
-  <hr>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>Av. Principal, 1000 - Centro | Tel: (11) 99999-0000</p>
-    <p>&copy; 2026 Concessionária Saiu-Bate. Todos os direitos reservados.</p>
+ 
+  <hr class="divisor">
+ 
+  <!-- 5. Rodapé -->
+  <footer class="rodape">
+    <p class="rodape-info">Av. Principal, 1000 - Centro | Tel: (11) 99999-0000</p>
+    <p class="rodape-copyright">&copy; 2026 Concessionária Saiu-Bate. Todos os direitos reservados.</p>
   </footer>
-
+ 
 </body>
 </html>
+ 

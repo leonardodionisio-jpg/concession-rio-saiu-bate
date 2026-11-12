@@ -1,0 +1,180 @@
+/* Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Esconde as linhas <hr> e quebras <br> do HTML puro para o CSS controlar os espaços */
+hr, form br {
+  display: none;
+}
+
+/* Cabeçalho e Menu */
+header {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+/* Seção de Boas-Vindas */
+#inicio {
+  background-color: #2b2d42;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#inicio h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Catálogo de Veículos (Cards lado a lado) */
+#veiculos {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#veiculos h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+article {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+article h3 {
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+article p {
+  margin-bottom: 8px;
+}
+
+/* Botão "Tenho interesse" dentro dos cards */
+article a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #e63946;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+article a:hover {
+  background-color: #c1121f;
+}
+
+/* Seção e Formulário de Contato */
+#contato {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e63946;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1a1a1a;
+  color: #cccccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

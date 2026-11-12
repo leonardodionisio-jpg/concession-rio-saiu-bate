@@ -1,0 +1,257 @@
+:root {
+  --fundo: #EFEFEF;
+  --escura: #121212;
+  --banner: #262626;
+  --destaque: #FFB703;
+  --destaque-hover: #FB8500;
+  --texto: #1E1E1E;
+  --texto-botao: #121212;
+}
+
+/* Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* Esconde os <hr> e <br> para o CSS controlar os espaçamentos */
+.divisor,
+.formulario-contato br {
+  display: none;
+}
+
+/* 1. Cabeçalho e Menu */
+.cabecalho {
+  background-color: var(--escura);
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.cabecalho-titulo {
+  font-size: 2rem;
+  color: var(--destaque);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+
+.cabecalho-subtitulo {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.menu-navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-link:hover {
+  color: var(--destaque);
+}
+
+/* 2. Seção de Apresentação (Banner) */
+.secao-banner {
+  padding: 55px 20px;
+  background-color: var(--banner);
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 3px solid var(--destaque);
+}
+
+.banner-titulo {
+  font-size: 2rem;
+  color: var(--destaque);
+  margin-bottom: 10px;
+}
+
+.banner-texto {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Títulos das Seções em Destaque */
+.secao-titulo {
+  text-align: center;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--escura);
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.secao-titulo::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--destaque);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* 3. Catálogo de Veículos (Grade Padrão) */
+.secao-veiculos {
+  max-width: 1050px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
+
+.catalogo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-veiculo {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 18px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-veiculo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.veiculo-imagem {
+  order: -1;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.veiculo-nome {
+  font-size: 1.25rem;
+  color: var(--escura);
+  margin-bottom: 6px;
+}
+
+.veiculo-info {
+  color: #555555;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.veiculo-preco {
+  font-size: 1.15rem;
+  color: var(--escura);
+  margin-bottom: 15px;
+}
+
+.btn-interesse {
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  padding: 11px 16px;
+  background-color: var(--destaque);
+  color: var(--texto-botao);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-interesse:hover {
+  background-color: var(--destaque-hover);
+  transform: translateY(-2px);
+}
+
+/* 4. Formulário de Contato */
+.secao-contato {
+  max-width: 600px;
+  margin: 45px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.campo-grupo {
+  margin-bottom: 16px;
+}
+
+.campo-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--escura);
+}
+
+.campo-input,
+.campo-select,
+.campo-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.campo-input:focus,
+.campo-select:focus,
+.campo-textarea:focus {
+  outline: none;
+  border-color: var(--destaque);
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 13px;
+  background-color: var(--escura);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--destaque);
+  color: var(--texto-botao);
+}
+
+/* 5. Rodapé */
+.rodape {
+  background-color: var(--escura);
+  color: #cccccc;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+.rodape-info {
+  margin-bottom: 6px;
+}
